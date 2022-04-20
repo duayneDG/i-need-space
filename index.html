@@ -13,7 +13,6 @@
 <body>
 
     <div class="content">
-
         <h1>
             When can I see a certain satellite?
         </h1>
@@ -26,15 +25,15 @@
             </div>
             <div class="row">
                 <label>Mapbox API Key</label>
-                <input id="api-key" />
+                <input id="api-key" type="password" />
             </div>
             <div class="row">
                 <label>Address</label>
-                <input id="address" />
+                <input id="address" placeholder="Enter Address"/>
             </div>
             <div class="row">
                 <label>Satellite NORAD</label>
-                <input id="norad" />
+                <input id="norad" placeholder="Enter Satellite ID" />
             </div>
             <div class="row">
                 <button id="search">
@@ -80,6 +79,14 @@
                 <div class="item">
                     46920
                 </div>
+                <div>
+                    <h3>Satellite Visible times</h3>
+                    <ol>
+                        <li class ="timeStamp" id = "cTimestamp"></li>
+                        <li class ="timeStamp" id = "rTimestamp"></li>
+                        <li class ="timeStamp" id = "sTimestamp"></li>
+                    </ol>
+                </div>
             </div>
             <div class="row">
                 <b>Find more of the brightest satellites' NORAD IDs&nbsp;<a href="https://www.n2yo.com/satellites/?c=1">here</a>.</b>
@@ -88,7 +95,7 @@
 
     </div>
 
-    <script src="apiKey.js"></script>
+   
     <script src="main.js"></script>
 </body>
 </html>
